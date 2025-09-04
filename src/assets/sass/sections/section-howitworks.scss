@@ -1,0 +1,208 @@
+.howitworks {
+    padding: 0 0 70px 0;
+    position: relative;
+    height: 500px;
+    margin-top: -25px;
+    user-select: none;
+
+    &__content {
+        height: 100%;
+        padding-top: 70px;
+    }
+
+    &__slider {
+        height: 100%;
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-navigation {
+            position: absolute;
+            width: 100%;
+            height: 0;
+            z-index: 1;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-pagination {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+
+            .swiper-pagination-bullet {
+                all: unset;
+                margin: 0 !important;
+                padding: 0;
+                display: flex;
+                width: 24px;
+                height: 2px;
+                background: $gray;
+                border-radius: 10px;
+                transition: 0.3s;
+
+                &-active {
+                    background: $accent;
+                }
+            }
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border: 2px solid $accent;
+            border-radius: 100%;
+            overflow: hidden;
+            transition: 0.3s;
+
+            img {
+                display: flex;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                object-fit: contain;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+            &.swiper-button-disabled {
+                pointer-events: none;
+                opacity: 0.4;
+            }
+        }
+
+        &-next {
+            transform: rotate(-90deg);
+        }
+
+        &-prev {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__swiper {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__title {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        color: $gray;
+        background: $whitebg;
+        padding: 5px 15px;
+    }
+
+    .hwtslide {
+        &__content {
+            transform: scale(0.9);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            filter: grayscale(1);
+            opacity: 0.3;
+            transition: 0.3s;
+        }
+
+        &__title {
+            color: $accent;
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+            a {
+                color: #2aabee;
+                transition: 0.3s;
+            }
+        }
+
+        &.swiper-slide-active {
+            .hwtslide__content {
+                filter: unset;
+                transform: unset;
+                opacity: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .howitworks {
+        &__swiper {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .howitworks {
+        .hwtslide {
+            &__subtitle {
+                font-size: 16px;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .howitworks {
+        &__slider {
+            &-navigation {
+                display: none;
+            }
+        }
+        &__swiper {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .howitworks {
+        margin-top: -18px;
+        padding: 0 0 40px 0;
+        height: 300px;
+
+        &__content {
+            padding-top: 40px;
+        }
+
+        &__slider {
+            &-pagination {
+                transform: translateY(20px);
+            }
+        }
+
+        &__swiper {
+            width: 90%;
+        }
+
+        .hwtslide {
+            &__subtitle {
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+    }
+}

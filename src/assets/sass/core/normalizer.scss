@@ -1,0 +1,212 @@
+@import url("@/assets/fonts/redrose/stylesheet.css");
+@import url("@/assets/fonts/manrope/stylesheet.css");
+
+*,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    font-family: "Manrope", sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(28, 79, 209, 0.5);
+        border-radius: 10px;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: none;
+
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+img {
+    display: flex;
+}
+
+h1 {
+    color: $black;
+    text-align: center;
+    font-family: "Red Rose";
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px; /* 90% */
+    text-transform: uppercase;
+}
+
+h2 {
+    color: $black;
+    font-family: "Red Rose";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px; /* 125% */
+}
+
+h3 {
+    color: $black;
+    font-family: "Red Rose";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 126.667% */
+}
+
+p {
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+}
+
+a {
+    color: $black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+section {
+    overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="radio"] {
+    accent-color: #1b4fd0;
+}
+
+.container {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+body {
+    background: $whitebg;
+    min-width: 320px;
+}
+
+html {
+    scroll-padding-top: 100px;
+    min-width: 320px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        width: 1250px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        width: 100%;
+        max-width: 992px;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 84px;
+        line-height: 0.9; /* 90% */
+    }
+
+    h2 {
+        font-size: 56px;
+        line-height: 1.25; /* 125% */
+    }
+
+    h3 {
+        font-size: 26px;
+        line-height: 1.2; /* 126.667% */
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .main {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+
+    * {
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 46px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: unset;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.4; /* 140% */
+    }
+
+    a {
+        font-size: 16px;
+        line-height: 1.4; /* 133.333% */
+    }
+}

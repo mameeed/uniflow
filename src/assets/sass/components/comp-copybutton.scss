@@ -1,0 +1,74 @@
+.copybutton {
+    all: unset;
+    background: $white;
+    padding: 0 10px;
+    height: 28px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    cursor: none;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1.5px solid $gray;
+    color: $gray;
+    transition: 0.3s all;
+
+    &__content {
+        height: 100%;
+        font-size: 14px;
+    }
+
+    &__copier {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-shrink: 0;
+        gap: 5px;
+    }
+
+    &__copied {
+        height: 200%;
+        padding: 28px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:hover {
+        color: $accent;
+        border-color: $accent;
+        transform: scale(1.03);
+    }
+
+    &:active {
+        color: #a50c41;
+        border-color: #a50c41;
+    }
+
+    &.animate {
+        color: $accent;
+        border-color: $accent;
+        transform: scale(1.03);
+
+        .copybutton__content {
+            animation: slide 3s cubic-bezier(1, -0.5, 0, 2) forwards;
+        }
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: none;
+    }
+    37.5% {
+        transform: translateY(calc(28px * -2));
+    }
+    87.5% {
+        transform: translateY(calc(28px * -2));
+    }
+    100% {
+        transform: none;
+    }
+}

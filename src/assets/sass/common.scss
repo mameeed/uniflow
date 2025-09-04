@@ -1,0 +1,24 @@
+// core styles
+@import "@/assets/sass/core/variables.scss";
+@import "@/assets/sass/core/normalizer.scss";
+@import "@/assets/sass/core/keyframes.scss";
+@import "@/assets/sass/core/mixins.scss";
+
+// components' styles
+@import "@/assets/sass/components/comp-cursor.scss";
+@import "@/assets/sass/components/comp-button.scss";
+@import "@/assets/sass/components/comp-copybutton.scss";
+@import "@/assets/sass/components/comp-introbg.scss";
+
+// sections' styles
+@import "@/assets/sass/sections/section-header.scss";
+@import "@/assets/sass/sections/section-footer.scss";
+@import "@/assets/sass/sections/section-intro.scss";
+@import "@/assets/sass/sections/section-engagement.scss";
+@import "@/assets/sass/sections/section-communities.scss";
+@import "@/assets/sass/sections/section-rewarding.scss";
+@import "@/assets/sass/sections/section-joinus.scss";
+@import "@/assets/sass/sections/section-howitworks.scss";
+
+// pages' styles
+@import "@/assets/sass/pages/page-home.scss";

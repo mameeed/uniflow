@@ -1,0 +1,167 @@
+.introduction {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    height: 100vh;
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 20px;
+    }
+
+    &__back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        padding: 20px;
+
+        img {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-title {
+            margin-bottom: 20px;
+
+            span {
+                color: $accent;
+                font-family: "Red Rose";
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100px;
+            }
+        }
+
+        &-subtitle {
+            color: $black;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 140% */
+            text-align: center;
+
+            span {
+                background: $telegram;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    &__actions {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        z-index: 2;
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border: 2px solid $accent;
+            border-radius: 100%;
+            overflow: hidden;
+            transition: 0.3s;
+
+            img {
+                display: flex;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                object-fit: contain;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .introduction {
+        &__texts {
+            &-title {
+                line-height: 0.8;
+                font-size: 84px;
+                margin-bottom: 10px;
+
+                span {
+                    font-size: 84px;
+                }
+            }
+
+            &-subtitle {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        &__texts {
+            &-title {
+                font-size: 64px;
+
+                span {
+                    font-size: 64px;
+                    line-height: 1;
+                }
+            }
+
+            &-subtitle {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .introduction {
+        padding: 30px;
+        padding-bottom: 50px;
+        height: 100svh;
+
+        &__texts {
+            &-title {
+                font-size: 44px;
+                text-align: left;
+
+                span {
+                    font-size: 44px;
+                    text-align: left;
+                    line-height: 1;
+                }
+            }
+
+            &-subtitle {
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+    }
+}

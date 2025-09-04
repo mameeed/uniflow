@@ -1,0 +1,278 @@
+.communities {
+    padding: 100px 0 160px 0;
+    position: relative;
+    border-bottom: 1px solid rgba(29, 30, 44, 0.15);
+
+    &__titling {
+        &-title {
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        gap: 65px;
+        flex-direction: column;
+        align-items: center;
+
+        &::after,
+        &::before {
+            position: absolute;
+            left: 50px;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            display: flex;
+            background: rgba(29, 30, 44, 0.15);
+            content: "";
+        }
+
+        &::after {
+            left: unset;
+            right: 50px;
+        }
+    }
+
+    &__main {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+
+        &-cards {
+            width: 100%;
+            display: flex !important;
+            gap: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(29, 30, 44, 0.2);
+            padding: 40px;
+        }
+    }
+
+    &__card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        border-radius: 15px;
+        border: 1px solid rgba(29, 30, 44, 0.15);
+        background: rgba(154, 159, 184, 0.2);
+        height: 190px;
+        padding: 30px;
+        gap: 8px;
+
+        span {
+            display: flex;
+            height: 20px;
+            width: 80%;
+            content: "";
+            border-radius: 5px;
+            border: 1px solid rgba(29, 30, 44, 0.15);
+            background: rgba(154, 159, 184, 0.2);
+            overflow: hidden;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: flex;
+                background-image: linear-gradient(0.25turn, transparent, #333, transparent);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 50px;
+                opacity: 0.1;
+                animation: skeletons 1.5s linear infinite;
+            }
+
+            &:nth-child(1) {
+                width: 25%;
+            }
+        }
+
+        &:nth-child(2) {
+            opacity: 0.4;
+        }
+
+        &:nth-child(3) {
+            span:nth-child(1) {
+                width: 40%;
+            }
+        }
+
+        &:nth-child(4) {
+            opacity: 0.6;
+        }
+
+        &.md-none {
+            display: none;
+        }
+    }
+
+    &__parallaxer {
+        position: absolute;
+
+        &-holder {
+            // position: relative;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &.item_1 {
+            top: -10%;
+            left: 60px;
+        }
+
+        &.item_2 {
+            top: -10%;
+            left: 70%;
+        }
+
+        &.item_3 {
+            top: 90%;
+            left: 20%;
+        }
+
+        &.item_4 {
+            top: 84%;
+            left: 92%;
+        }
+
+        &.item_5 {
+            top: 80%;
+            left: -7%;
+        }
+
+        &.item_6 {
+            top: 75%;
+            left: 65%;
+        }
+
+        &.item_7 {
+            top: -10%;
+            left: 85%;
+        }
+
+        &.item_8 {
+            top: -10%;
+            left: 30%;
+        }
+    }
+}
+
+@keyframes skeletons {
+    from {
+        left: -15px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+@media (max-width: 1480px) {
+    .communities {
+        padding: 100px 50px;
+
+        &__content {
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .communities {
+        padding: 100px 0;
+
+        &__card {
+            height: 140px;
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .communities {
+        &__content {
+            &::after,
+            &::before {
+                display: none;
+            }
+        }
+
+        &__main {
+            &-cards {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+
+        &__card {
+            height: 140px;
+            width: calc(50% - 10px);
+        }
+
+        &__parallaxer {
+            &.item_5,
+            &.item_7 {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .communities {
+        padding: 50px 0;
+
+        &__titling {
+            &-title {
+                font-size: 44px;
+                line-height: 1;
+            }
+        }
+
+        &__main {
+            width: 100%;
+
+            &-cards {
+                flex-wrap: wrap;
+                gap: 20px;
+                border: 0;
+                padding: 0;
+            }
+        }
+
+        &__card {
+            height: 140px;
+            width: calc(50% - 10px);
+
+            &.md-none {
+                display: flex;
+            }
+        }
+
+        &__parallaxer {
+            &.item_8,
+            &.item_4,
+            &.item_1 {
+                display: none;
+            }
+
+            &.item_2 {
+                left: 0%;
+            }
+
+            &.item_3 {
+                left: 80%;
+            }
+
+            &.item_6 {
+                top: 40%;
+                left: 30%;
+            }
+        }
+    }
+}

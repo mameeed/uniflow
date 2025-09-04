@@ -1,0 +1,40 @@
+.unibtn {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    padding: 20px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 55px;
+    min-width: 150px;
+    border-radius: 4px;
+    background: $accent;
+    cursor: none;
+    transition: 0.3s;
+
+    &__icon {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        display: flex;
+    }
+
+    &__text {
+        color: $white;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 140% */
+        transition: 0.2s;
+        white-space: nowrap;
+    }
+
+    &:hover {
+        background: #2aabee;
+    }
+
+    &:active {
+        background: #1f95ce;
+    }
+}

@@ -1,0 +1,59 @@
+html {
+    cursor: initial !important;
+
+    &.customcursor {
+        cursor: none !important;
+    }
+}
+
+.unisale__cursor {
+    pointer-events: none;
+
+    &-ball {
+        position: fixed;
+        top: 0;
+        left: 0;
+        mix-blend-mode: difference;
+        z-index: 9;
+        display: flex;
+
+        &--big {
+            &::after {
+                width: 30px !important;
+                height: 30px !important;
+                border-color: $black;
+            }
+        }
+
+        &--small {
+            &::after {
+                background: #f7f8fa;
+            }
+        }
+
+        &::after {
+            content: "";
+            // background: #f7f8fa;
+            border: 1px solid #f7f8fa;
+            transition: 0.3s;
+            display: flex;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        cursor: initial !important;
+
+        &.customcursor {
+            cursor: unset !important;
+        }
+    }
+
+    .unisale__cursor {
+        display: none;
+    }
+}

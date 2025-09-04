@@ -1,0 +1,54 @@
+@keyframes breathing {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.15) rotate(1deg);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes headerAppear {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes twinkler {
+    0% {
+        transform: scale(0) rotate(0);
+    }
+    40% {
+        transform: scale(1.25) rotate(360deg);
+    }
+    80% {
+        transform: scale(0.35) rotate(0deg);
+    }
+    100% {
+        transform: scale(0) rotate(0);
+    }
+}
+
+@keyframes scaler {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
