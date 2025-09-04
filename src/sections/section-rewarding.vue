@@ -42,7 +42,7 @@
                         </div>
                         <h3 class="rewarding__card-title">Subscription</h3>
                     </div>
-                    <p class="rewarding__card-text">To access the full array of UniQuest's features, Telegram community owners can subscribe, while also enjoying free features available for trial.</p>
+                    <p class="rewarding__card-text">To access the full array of UniFlow's features, Telegram community owners can subscribe, while also enjoying free features available for trial.</p>
                 </div>
                 <div
                     v-parallax="-0.04"
@@ -56,7 +56,7 @@
                         </div>
                         <h3 class="rewarding__card-title">Revenue Share</h3>
                     </div>
-                    <p class="rewarding__card-text">The collected revenue generated through the bot subscription will be shared with $UNIQ holders. As the UniQuest community grows, so does the advantage for our token holders.</p>
+                    <p class="rewarding__card-text">The collected revenue generated through the bot subscription will be shared with $UNIQ holders. As the UniFlow community grows, so does the advantage for our token holders.</p>
                 </div>
             </div>
         </div>

@@ -71,8 +71,8 @@
                 <div class="header__actions">
                     <CompButton
                         class="header__action-btn"
-                        :unibtnText="'Start UniQuest'"
-                        :unibtnLink="'https://t.me/uniquestio_bot'"
+                        :unibtnText="'Start UniFlow'"
+                        :unibtnLink="'https://t.me/mukhammadumid'"
                         :unibtnTarget="true"
                         :unibtnLeftIcon="'icon-btn-star'"
                         :unibtnRightIcon="'icon-btn-star'" />

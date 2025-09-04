@@ -11,14 +11,14 @@
                         Engagement?
                     </h1>
                     <p class="joinus__card-subtitle">
-                        Join UniQuest today and transform your
+                        Join UniFlow today and transform your
                         <span>Telegram</span>
                         community experience!
                     </p>
                     <CompButton
                         class="header__action-btn"
                         :unibtnText="'Get Started'"
-                        :unibtnLink="'https://t.me/uniquestio_bot'"
+                        :unibtnLink="'https://t.me/mukhammadumid'"
                         :unibtnTarget="true"
                         :unibtnLeftIcon="'icon-btn-star'"
                         :unibtnRightIcon="'icon-btn-star'" />

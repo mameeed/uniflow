@@ -46,7 +46,7 @@
                         href="mailto:info@uniquest.io">
                         info@uniquest.io
                     </a>
-                    <p class="footer__info-text">© 2023 UniQuest.io | All Rights Reserved</p>
+                    <p class="footer__info-text">© 2023 UniFlow.io | All Rights Reserved</p>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@ export default {
     data() {
         return {
             isAdditional: false,
-            soicals: ["https://etherscan.io/", "https://coinmarketcap.com/", "https://www.coingecko.com/", "https://docs.uniquest.io", "https://www.dextools.io/", "https://uniswap.org/", "https://twitter.com/uniquest_io", "https://t.me/uniquestportal"],
+            soicals: ["https://etherscan.io/", "https://coinmarketcap.com/", "https://www.coingecko.com/", "https://t.me/mukhammadumid", "https://www.dextools.io/", "https://uniswap.org/", "https://twitter.com", "https://t.me/mukhammadumid"],
         };
     },
 };

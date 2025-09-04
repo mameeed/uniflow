@@ -7,7 +7,7 @@
                 <h2
                     v-parallax="-0.13"
                     class="communities__titling-title">
-                    Communities using UniQuest
+                    Communities using UniFlow
                 </h2>
             </div>
             <div class="communities__main">

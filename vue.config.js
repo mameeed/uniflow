@@ -11,7 +11,7 @@ module.exports = defineConfig({
     pages: {
         index: {
             entry: "/src/main.js",
-            title: "Uniquest | Activate your community",
+            title: "UniFlow | Activate your community",
         },
     },
 });

@@ -17,9 +17,9 @@
                                     Kickstart your campaign by going to
                                     <a
                                         class="hoverable"
-                                        href="https://t.me/uniquestio_bot"
+                                        href="https://t.me/mukhammadumid"
                                         target="_blank">
-                                        @UniQuestio_bot
+                                        @UniFlowio_bot
                                     </a>
                                     on Telegram.
                                 </p>

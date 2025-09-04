@@ -36,9 +36,9 @@
             </div>
             <CompButton
                 class="engagement__btn"
-                :unibtnLink="'https://t.me/uniquestio_bot'"
+                :unibtnLink="'https://t.me/mukhammadumid'"
                 :unibtnTarget="true"
-                :unibtnText="'Start UniQuest'"
+                :unibtnText="'Start UniFlow'"
                 :unibtnLeftIcon="'icon-btn-star'"
                 :unibtnRightIcon="'icon-btn-star'" />
         </div>
@@ -71,7 +71,7 @@ export default {
                 {
                     emoji: emojiIntegration,
                     title: "Integration",
-                    desc: "Effortlessly integrate the UniQuest bot into your community's Telegram group",
+                    desc: "Effortlessly integrate the UniFlow bot into your community's Telegram group",
                 },
                 {
                     emoji: emojiCommunity,
